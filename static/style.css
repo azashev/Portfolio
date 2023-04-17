@@ -1,0 +1,638 @@
+@import url("https://use.fontawesome.com/releases/v6.0.0/css/all.css");
+
+/* General Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: "Chivo Mono", sans-serif;
+    line-height: 1.6;
+    color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+#home-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #3b89f1;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #3b89f1;
+}
+
+.typed-words {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #d9d9d9;
+    transition: color 0.3s;
+}
+
+button {
+    transition: background-color 0.3s;
+}
+
+/* Header */
+header {
+    background: #1c2e4a;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d9d9d9;
+    position: relative;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #83a8db;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.4s;
+    padding-bottom: 1px;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    background-color: #83a8db;
+}
+
+nav ul li a.active {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 4px;
+    transition: border-bottom-color 0.4s;
+}
+
+nav ul li a.active:hover::before {
+    width: 0;
+    border-bottom-color: #83a8db;
+}
+
+nav ul li a.active:hover {
+    border-bottom-color: #83a8db;
+}
+
+
+
+/* Main Styles */
+main {
+    display: block;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+section p, section ul {
+    text-align: left;
+    max-width: 800px;
+}
+
+#home {
+    margin-top: 60px;
+}
+
+
+/* About Page */
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 60px - 40px - 2rem);
+    padding: 50px 0 40px 0;
+}
+
+#about-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(./images/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about {
+    display: block;
+    text-align: left;
+    width: 50%;
+    margin-left: 8%;
+}
+
+#about-h1 {
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+#about p {
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+    padding-left: 30px;
+}
+
+#about p::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    height: 65%;
+    width: 2px;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
+
+/* Projects Page */
+
+#projects-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(./images/projects.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.project {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
+    background: #2a3b55;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project > div {
+  flex-basis: 100%;
+}
+
+#projects {
+    margin: 50px 0;
+}
+
+#projects-h1 {
+    font-size: 50px;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 5px solid #3b89f1;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+.dot-1,
+.dot-2,
+.dot-3 {
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+
+}
+
+.dot-1 {
+    animation: blink 2s infinite 0.4s;
+    -webkit-animation: blink 2s infinite 0.4s;
+}
+
+.dot-2 {
+    animation: blink 2s infinite 0.8s;
+    -webkit-animation: blink 2s infinite 0.8s;
+}
+
+.dot-3 {
+    animation: blink 2s infinite 1.2s;
+    -webkit-animation: blink 2s infinite 1.2s;
+}
+
+@keyframes blink {
+    0%, 25% {
+        opacity: 1;
+    }
+    50%, 75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0%, 25% {
+        opacity: 1;
+    }
+    50%, 75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.projects-btns {
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(145deg, #255cb3, #3b89f1, #6ca7f9), linear-gradient(145deg, #1e4a93, #2a67b7, #4890e6);
+    background-size: 100% 200%;
+    background-position: 100% 100%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.projects-btns:hover {
+    background-position: 0 0;
+}
+
+.projects-btns:active {
+    background-image: linear-gradient(145deg, #245ca7, #3276c2, #468ddf);
+}
+
+
+/* Connect Four styles */
+
+.connect-four {
+    width: 70%;
+    padding-right: 50px;
+}
+
+.connect-four-img {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.connect-four-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+
+/* Hangman styles */
+
+.hangman {
+    width: 70%;
+    padding-right: 50px;
+}
+
+.hangman-img {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.hangman-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+
+/* Weather App styles */
+
+.weather-app {
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-info-details {
+    width: 70%;
+    padding-right: 50px;
+}
+
+.weather-container {
+    margin-top: 78px;
+}
+
+.weather-app-form {
+    position: relative;
+    padding-right: 140px;
+}
+
+#form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.weather-btn {
+    position: absolute;
+    right: 0;
+    padding: 10px 20px;
+}
+
+.weather-info {
+    display: none;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.weather-info h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: black
+}
+
+.weather-info p {
+    color: black;
+}
+
+.temp-toggle {
+    display: none;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.temp-toggle:hover {
+    background-color: #83a8db;
+}
+
+.project h3 {
+    margin-bottom: 1rem;
+}
+
+.project a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    margin-right: 1rem;
+    transition: background 0.3s;
+}
+
+/* Skills */
+
+
+/* Contact Page */
+
+#contact-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-top: 70px;
+}
+
+.contact-card {
+    width: 800px;
+    border: 2px solid #3b89f1;
+    border-radius: 10px;
+    background-color: rgb(59, 137, 241, 0.2);
+    color: #fff;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid #ffffff;
+}
+
+.card-content {
+    padding-top: 110px;
+}
+
+.card-content h1 {
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.email-container {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 3rem;
+    white-space: nowrap;
+}
+
+.email-container > p {
+    display: inline;
+}
+
+#copy-email-btn {
+    display: inline;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3b89f1;
+}
+
+#copy-email-btn:hover {
+    background-color: #7ca7e7;
+}
+
+.email-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.copy-message {
+    position: absolute;
+    top: 75%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: #3b89f1;
+    color: #000000FF;
+    padding: 6px 8px;
+    border-radius: 5px;
+    display: none;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.socials-wrapper {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.icon-links {
+    padding-top: 0.5rem;
+}
+
+.icon-links a {
+    color: #ddd;
+    text-decoration: none;
+    padding-right: 8px;
+}
+
+.icon-links a:hover {
+    color: #fff;
+}
+
+.icon-links a:first-child {
+    /*margin-right: 20px;*/
+}
+
+.icon-links i {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Footer */
+footer {
+    background: #1c2e4a;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  /* Header */
+  nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+  nav ul li {
+      margin: 0;
+  }
+
+  /* Main Style */
+  section {
+      padding: 1rem 0;
+  }
+
+  /* Home */
+  #home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+  }
+
+  /* Projects */
+  .project {
+      flex-direction: column;
+      width: 90%;
+      gap: 1rem;
+  }
+
+  .connect-four,
+  .hangman,
+  .weather-app {
+      width: 100%;
+      padding-right: 0;
+  }
+
+  .connect-four-img,
+  .hangman-img {
+      width: 100%;
+  }
+
+  .weather-app-form {
+      width: 100%;
+  }
+
+  input[type="text"] {
+      width: 100%;
+  }
+}

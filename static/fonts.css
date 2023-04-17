@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Chivo Mono';
+    src: url('./fonts/ChivoMono-VariableFont_wght.ttf') format('woff2'),
+         url('./fonts/ChivoMono-Italic-VariableFont_wght.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
