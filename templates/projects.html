@@ -44,6 +44,7 @@
                             <button class="projects-btns weather-btn" type="submit">Get Weather</button>
                         </form>
                         <div class="weather-info"></div>
+                        <button class="temp-toggle" style="display: none;">Toggle °C/°F</button>
                     </div>
                 </div>
             </div>
@@ -57,7 +58,6 @@
                         <li>A player wins when they connect four slots</li>
                         <li>The winning connected slots must be consecutive</li>
                     </ul>
-
                     <p>A connection can be:</p>
                     <ul>
                         <li>Horizontal</li>
@@ -100,13 +100,15 @@
         </section>
     </main>
 
+    <button id="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
     <footer>
         <p>&copy; Alexander Zashev, 2023. All rights reserved.</p>
     </footer>
-    <script src="../static/script.js" defer></script>
+    <script src="../static/backtotop.js" defer></script>
+    <script src="../static/script.js"></script>
     <script src="../static/SmoothScroll.js"></script>
     <script>
-      SmoothScroll({ stepSize: 40 });
+        SmoothScroll({stepSize: 40});
     </script>
 </body>
 </html>
