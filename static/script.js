@@ -1,8 +1,19 @@
 const form = document.querySelector("form");
 const weatherInfo = document.querySelector(".weather-info");
 const tempToggle = document.querySelector(".temp-toggle");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const navUl = document.querySelector("nav ul");
 
 let tempUnit = 'C';
+
+hamburgerMenu.addEventListener("click", function () {
+    hamburgerMenu.classList.toggle('open');
+    if (navUl.style.display === "none" || navUl.style.display === "") {
+        navUl.style.display = "flex";
+    } else {
+        navUl.style.display = "none";
+    }
+});
 
 if (weatherInfo) {
     form.addEventListener("submit", async (e) => {
@@ -27,7 +38,7 @@ async function fetchWeatherData(city) {
 }
 
 function celsiusToFahrenheit(celsius) {
-    return (celsius * 9/5) + 32;
+    return (celsius * 9 / 5) + 32;
 }
 
 function updateWeatherInfo(weatherData) {

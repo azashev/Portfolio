@@ -1,0 +1,484 @@
+@media screen and (max-width: 1736px) {
+    /* Navigation */
+    nav ul li a {
+        font-size: 30px;
+    }
+
+
+    /* Home */
+    .home-container {
+        width: 90%;
+    }
+
+    .home-section {
+        width: 56%;
+        margin-right: 40px;
+    }
+
+
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 80px;
+    }
+
+    .experience {
+        width: 90%;
+        font-size: 25px;
+    }
+
+    .experience-info {
+        margin-left: 140px;
+        width: 50%;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 65px;
+        height: 65px;
+        font-size: 26px;
+        right: 25px;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1379px) {
+    /* Navigation */
+    nav ul li a {
+        font-size: 34px;
+    }
+
+
+    /* Home */
+    .home-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 148px;
+    }
+
+    .home-section {
+        font-size: 27px;
+        margin: 0;
+    }
+
+    .typed-words {
+        display: block;
+        position: absolute;
+    }
+
+    .about-me {
+        margin-top: 50px;
+    }
+
+    .me-image img {
+        width: 360px;
+        height: 360px;
+    }
+
+
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 40px;
+    }
+
+    .experience {
+        font-size: 26px;
+    }
+
+    .date {
+        text-align: center;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    /* Home */
+    .home-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .home-section {
+        width: 40%;
+        font-size: 26px;
+    }
+
+    .name h1 {
+        margin-bottom: 10px;
+    }
+
+    .me-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 44px;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .experience-date {
+        font-size: 24px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .experience-info {
+        font-size: 26px;
+        width: 90%;
+        text-align: center;
+        margin: 0;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+        right: 25px;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    /* Experience section */
+    .experience-date {
+        font-size: 30px;
+    }
+
+    .experience-info {
+        font-size: 30px;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+        right: 25px;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 1085px) {
+    /* Home */
+    .home-container {
+        gap: 50px;
+    }
+
+    .home-section {
+        width: 48%;
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    /* Header */
+    nav ul {
+        gap: 2.5rem;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 40px;
+    }
+
+
+    /* Home */
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 30px;
+    }
+
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        font-size: 48px;
+    }
+
+    .name h1 {
+        font-size: 60px;
+    }
+
+    .home-section h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .typed-words {
+        left: 33%;
+    }
+
+    .me-image {
+        width: 300px;
+        height: 300px;
+        order: -1;
+    }
+
+    .about-me {
+        width: 100%;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .cv-download {
+        font-size: 50px;
+    }
+
+
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 90px;
+    }
+
+    .experience-date {
+        font-size: 30px;
+    }
+
+    .experience-info {
+        font-size: 30px;
+    }
+
+    .experience-position {
+        font-size: 40px;
+    }
+
+    .experience-info .experience-location {
+        text-align: center;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 26px;
+    }
+
+    /* Projects */
+    /*.project {*/
+    /*    flex-direction: column;*/
+    /*    width: 90%;*/
+    /*    gap: 1rem;*/
+    /*}*/
+    /*.connect-four,*/
+    /*.hangman,*/
+    /*.weather-app {*/
+    /*    width: 100%;*/
+    /*    padding-right: 0;*/
+    /*}*/
+    /*.connect-four-img,*/
+    /*.hangman-img {*/
+    /*    width: 100%;*/
+    /*}*/
+    /*.weather-app-form {*/
+    /*    width: 100%;*/
+    /*}*/
+    /*input[type="text"] {*/
+    /*    width: 100%;*/
+    /*}*/
+}
+
+@media screen and (max-width: 980px) {
+    /* Header */
+    nav ul {
+        gap: 4.5rem;
+    }
+
+
+    /* Home */
+    .me-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .me-image img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .home-section {
+        font-size: 26px;
+    }
+
+    .name h1 {
+        font-size: 36px;
+    }
+
+    .home-section h3 {
+        font-size: 32px;
+    }
+
+    .typed-words {
+        left: 34%;
+    }
+
+    .cv-download {
+        display: block;
+        font-size: 26px;
+        width: 30%;
+        margin: 25px auto 0;
+    }
+
+
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 66px;
+    }
+
+    .experience-date {
+        font-size: 26px;
+    }
+
+    .experience-position {
+        font-size: 28px;
+    }
+
+    .experience-info {
+        font-size: 20px;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 939px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    /* Hamburger menu */
+    .hamburger-menu {
+        display: inline-block;
+        position: relative;
+        width: 60px;
+        height: 40px;
+        cursor: pointer;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .hamburger-menu .line {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        transition: all 0.8s;
+    }
+
+    .line.line1 {
+        top: 0;
+    }
+
+    .line.line2 {
+        top: 18px;
+    }
+
+    .line.line3 {
+        bottom: 0;
+    }
+
+    .hamburger-menu.open .line.line1 {
+        transform: translateY(18px) rotate(45deg);
+    }
+
+    .hamburger-menu.open .line.line2 {
+        opacity: 0;
+    }
+
+    .hamburger-menu.open .line.line3 {
+        transform: translateY(-18px) rotate(-45deg);
+    }
+
+
+    /* Home */
+    .cv-download {
+        width: 34%;
+    }
+}
