@@ -8,11 +8,7 @@ let tempUnit = 'C';
 
 hamburgerMenu.addEventListener("click", function () {
     hamburgerMenu.classList.toggle('open');
-    if (navUl.style.display === "none" || navUl.style.display === "") {
-        navUl.style.display = "flex";
-    } else {
-        navUl.style.display = "none";
-    }
+    navUl.classList.toggle('open');
 });
 
 if (weatherInfo) {

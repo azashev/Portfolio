@@ -1,5 +1,5 @@
 @media screen and (max-width: 1736px) {
-    /* Navigation */
+    /* Header */
     nav ul li a {
         font-size: 30px;
     }
@@ -47,9 +47,8 @@
     }
 }
 
-
 @media screen and (max-width: 1379px) {
-    /* Navigation */
+    /* Header */
     nav ul li a {
         font-size: 34px;
     }
@@ -106,7 +105,6 @@
         font-size: 24px;
     }
 }
-
 
 @media screen and (max-width: 1280px) {
     /* Home */
@@ -174,7 +172,6 @@
     }
 }
 
-
 @media screen and (max-width: 1199px) {
     /* Experience section */
     .experience-date {
@@ -201,7 +198,6 @@
     }
 }
 
-
 @media screen and (max-width: 1085px) {
     /* Home */
     .home-container {
@@ -213,7 +209,6 @@
         font-size: 30px;
     }
 }
-
 
 @media screen and (max-width: 1024px) {
     /* Header */
@@ -415,21 +410,33 @@
 }
 
 @media screen and (max-width: 939px) {
+    /* Header */
     nav {
         position: sticky;
         top: 0;
     }
 
     nav ul {
-        display: none;
+        display: flex;
         flex-direction: column;
         gap: 1rem;
+        height: 0;
+        overflow: hidden;
+        transition: height 1s ease-in-out;
+    }
+
+    nav ul.open {
+        height: 500px;
     }
 
     nav ul li a {
-        font-size: 18px;
-        padding: 10px 20px;
+        font-size: 40px;
+        padding: 30px 20px;
         display: block;
+    }
+
+    nav ul li a.active {
+        padding-bottom: 5px;
     }
 
     /* Hamburger menu */
@@ -440,7 +447,12 @@
         height: 40px;
         cursor: pointer;
         color: #fff;
-        margin-bottom: 20px;
+        margin: 30px 0;
+    }
+
+    nav ul.open {
+        height: 500px;
+        /*margin-left: 0;*/
     }
 
     .hamburger-menu .line {
@@ -480,5 +492,395 @@
     /* Home */
     .cv-download {
         width: 34%;
+    }
+}
+
+@media screen and (max-width: 839px) {
+
+    /* Home */
+    .cv-download {
+        width: 46%;
+        padding: 20px;
+    }
+
+
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 56px;
+    }
+
+    .experience-date {
+        font-size: 22px;
+    }
+
+    .experience-position {
+        font-size: 26px;
+    }
+
+    .experience-info {
+        font-size: 18px;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+        right: 16px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    /* Home */
+    .typed-words {
+        left: 30%;
+    }
+
+    .cv-download {
+        width: 43%;
+        padding: 14px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    /* Header */
+    nav ul li {
+        display: inline;
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    nav ul.open {
+        height: 400px;
+    }
+
+
+    /* Home */
+    .home-section {
+        font-size: 20px;
+    }
+
+    .name h1 {
+        font-size: 32px;
+    }
+
+    .home-section h3 {
+        font-size: 24px;
+    }
+
+    .typed-words {
+        left: 32%;
+    }
+
+    .cv-download {
+        width: 37%;
+        padding: 7px;
+        font-size: 20px;
+    }
+
+    /* Back to top */
+    #back-to-top {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+        right: 10px;
+    }
+
+
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 46px;
+    }
+
+    .experience-date {
+        font-size: 18px;
+    }
+
+    .experience-position {
+        font-size: 24px;
+    }
+
+    .experience-info {
+        font-size: 16px;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 40px;
+    }
+
+    .experience-date {
+        font-size: 14px;
+    }
+
+    .experience-position {
+        font-size: 20px;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        right: 6px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* Home */
+    .me-image img {
+        width: 220px;
+        height: 230px;
+    }
+
+    .typed-words {
+        left: 29%;
+    }
+
+    .cv-download {
+        width: 48%;
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Home */
+    .home-section {
+        font-size: 18px;
+    }
+
+    .name h1 {
+        font-size: 30px;
+    }
+
+    .home-section h3 {
+        font-size: 22px;
+    }
+
+    .typed-words {
+        left: 26%;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    /* Back to top */
+    #back-to-top {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    /* Header */
+    nav ul.open {
+        height: 330px;
+    }
+
+    .hamburger-menu {
+        margin: 10px 0 0 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+
+    /* Home */
+    .typed-words {
+        left: 22%;
+    }
+
+    .cv-download {
+        width: 58%;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    /* Hamburger menu */
+    .hamburger-menu {
+        transform: scale(0.5);
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+
+    nav ul.open {
+        height: 230px;
+    }
+
+
+    /* Home */
+    .home-container {
+        min-height: 0;
+        margin-top: 0;
+        gap: 0;
+    }
+
+    .me-image {
+        width: 70%;
+    }
+
+    .me-image img {
+        width: 67%;
+        height: 58%;
+    }
+
+    .home-section {
+        font-size: 14px;
+    }
+
+    .name h1 {
+        font-size: 24px;
+    }
+
+    .home-section h3 {
+        font-size: 17px;
+    }
+
+    .typed-words {
+        left: 26%;
+    }
+
+    .about-me {
+        margin-top: 54px;
+    }
+
+    .cv-download {
+        width: 50%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+
+    /* Experiences section */
+    .experiences-container h2 {
+        font-size: 30px;
+    }
+
+    .experience {
+        padding: 30px 0 54px;
+    }
+
+    .experience-date {
+        font-size: 12px;
+    }
+
+    .experience-position {
+        font-size: 14px;
+    }
+
+    .experience-info {
+        font-size: 12px;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 24px;
+        height: 24px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    /* Home */
+    .home-container {
+        margin-top: -52px;
+    }
+
+    .home-section {
+        font-size: 12px;
+        margin-top: -48px;
+    }
+
+    .name h1 {
+        font-size: 20px;
+    }
+
+    .home-section h3 {
+        font-size: 12px;
+    }
+
+    .me-image img {
+        width: 60%;
+        height: 44%;
+    }
+
+    .typed-words {
+        left: 31%;
+    }
+
+    .about-me {
+        margin-top: 30px;
+    }
+
+    .cv-download {
+        width: 47%;
+        padding: 7px;
+        font-size: 11px;
+    }
+
+
+    /* Experience section */
+    .experiences-container {
+        padding-top: 20px;
+    }
+
+    .experiences-container h2 {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .experience-date {
+        font-size: 11px;
+    }
+
+    .experience-position {
+        font-size: 13px;
+    }
+
+    .experience-info {
+        font-size: 8px;
+    }
+
+    .role-bullet-list li {
+        padding-left: 0;
+    }
+
+    .experience {
+        padding: 18px 0 31px;
+    }
+
+    #back-to-top {
+        width: 21px;
+        height: 21px;
+        font-size: 9px;
     }
 }
