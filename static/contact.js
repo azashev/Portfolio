@@ -1,4 +1,4 @@
-document.getElementById("copy-email-btn").addEventListener("click", function() {
+document.getElementById("copy-email-btn").addEventListener("click", function () {
     const email = document.getElementById("email").innerText;
     const textarea = document.createElement("textarea");
     textarea.value = email;
@@ -9,7 +9,7 @@ document.getElementById("copy-email-btn").addEventListener("click", function() {
 
     const copyMessage = document.querySelector(".copy-message");
     copyMessage.style.display = "inline";
-    setTimeout(function() {
+    setTimeout(function () {
         copyMessage.style.display = "none";
     }, 3000);
 });

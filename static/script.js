@@ -1,15 +1,8 @@
 const form = document.querySelector("form");
 const weatherInfo = document.querySelector(".weather-info");
 const tempToggle = document.querySelector(".temp-toggle");
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-const navUl = document.querySelector("nav ul");
 
 let tempUnit = 'C';
-
-hamburgerMenu.addEventListener("click", function () {
-    hamburgerMenu.classList.toggle('open');
-    navUl.classList.toggle('open');
-});
 
 if (weatherInfo) {
     form.addEventListener("submit", async (e) => {
