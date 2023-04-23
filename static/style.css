@@ -3,10 +3,11 @@
 /* General Styles */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
+    height: 100%;
     scroll-behavior: smooth;
 }
 
@@ -23,6 +24,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100%;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -282,12 +285,10 @@ main {
 }
 
 
-
 section p, section ul {
     text-align: left;
     max-width: 800px;
 }
-
 
 
 /* About Page */
@@ -585,7 +586,7 @@ section p, section ul {
 
 /* Contact Page */
 
-#contact-body {
+body#contact-body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -594,6 +595,11 @@ section p, section ul {
     background-position: center;
     background-attachment: fixed;
 }
+
+body#contact-body main {
+    flex-grow: 1;
+}
+
 
 #contact {
     display: flex;
