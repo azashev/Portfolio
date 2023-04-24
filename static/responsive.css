@@ -236,13 +236,13 @@
 
 
     /* Projects page */
-    .project {
-        display: flex;
-        flex-direction: column;
-        max-width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    /*.project {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    max-width: 50%;*/
+    /*    margin-left: auto;*/
+    /*    margin-right: auto;*/
+    /*}*/
 
     .weather-info-details {
         width: 100%;
@@ -254,14 +254,10 @@
         width: 62%;
     }
 
-    .weather-app-form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .weather-btn {
-        padding: 11px 20px;
-    }
+    /*.weather-app-form {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
 
     .weather-info {
         text-align: center;
@@ -273,22 +269,31 @@
         margin-right: auto;
     }
 
-    .column-layout {
-        display: flex;
-        flex-direction: column;
+    /*.project-content {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
+
+    .project-content h3 {
+        order: 1;
     }
 
-    .buttons-container {
+    .project-content p,
+    .project-content ul {
         order: 2;
     }
 
     .project-img-container {
-        order: 1;
+        order: 4;
+    }
+
+    .buttons-container {
+        order: 3;
     }
 
     .project img {
         width: 100%;
-        max-width: 600px; /* You can adjust this value to control the maximum width of the images */
+        max-width: 600px;
         margin: 0 auto;
     }
 }
