@@ -42,10 +42,9 @@
 
     /* Back to top */
     #back-to-top {
-        width: 65px;
-        height: 65px;
-        font-size: 26px;
-        right: 25px;
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
     }
 
 
@@ -107,6 +106,32 @@
     #about p {
         font-size: 20px;
     }
+
+
+    /* Projects page */
+    #projects-h1 {
+        font-size: 40px;
+    }
+
+    .project h3 {
+        font-size: 25px;
+    }
+
+    section p {
+        font-size: 17px;
+    }
+
+    section ul {
+        font-size: 17px;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 1379px) {
@@ -157,14 +182,6 @@
 
     .date {
         text-align: center;
-    }
-
-
-    /* Back to top */
-    #back-to-top {
-        width: 56px;
-        height: 56px;
-        font-size: 24px;
     }
 }
 
@@ -235,15 +252,6 @@
     }
 
 
-    /* Projects page */
-    /*.project {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    max-width: 50%;*/
-    /*    margin-left: auto;*/
-    /*    margin-right: auto;*/
-    /*}*/
-
     .weather-info-details {
         width: 100%;
         padding: 0;
@@ -254,10 +262,6 @@
         width: 62%;
     }
 
-    /*.weather-app-form {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
 
     .weather-info {
         text-align: center;
@@ -268,11 +272,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-    /*.project-content {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
 
     .project-content h3 {
         order: 1;
@@ -360,12 +359,45 @@
         font-size: 16px;
     }
 
+
+    /* Projects page */
+    #projects-h1 {
+        font-size: 35px;
+    }
+
+    .project h3 {
+        font-size: 22px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    section ul {
+        font-size: 15px;
+    }
+
+    .weather-features {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .hangman-rules {
+        text-align: left;
+        padding-left: 40px;
+    }
+
     /* Back to top */
     #back-to-top {
-        width: 55px;
-        height: 55px;
-        font-size: 22px;
-        right: 25px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        right: 50px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 15px;
     }
 }
 
@@ -520,6 +552,52 @@
         width: 48%;
         font-size: 30px;
     }
+
+
+    /* Projects page */
+    #projects-h1 {
+        font-size: 27px;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .project a {
+        font-size: 20px;
+    }
+
+    section p {
+        font-size: 18px;
+    }
+
+    section ul {
+        font-size: 18px;
+    }
+
+    .connect-four {
+        width: 100%;
+        padding: 0;
+    }
+
+    .connect-four-img {
+        width: 100%;
+    }
+
+
+    .hangman {
+        width: 100%;
+        padding: 0;
+    }
+
+    .project img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .project-img-container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -609,34 +687,10 @@
         height: 60px;
         font-size: 28px;
     }
-
-
-    /* Projects */
-    /*.project {*/
-    /*    flex-direction: column;*/
-    /*    width: 90%;*/
-    /*    gap: 1rem;*/
-    /*}*/
-    /*.connect-four,*/
-    /*.hangman,*/
-    /*.weather-app {*/
-    /*    width: 100%;*/
-    /*    padding-right: 0;*/
-    /*}*/
-    /*.connect-four-img,*/
-    /*.hangman-img {*/
-    /*    width: 100%;*/
-    /*}*/
-    /*.weather-app-form {*/
-    /*    width: 100%;*/
-    /*}*/
-    /*input[type="text"] {*/
-    /*    width: 100%;*/
-    /*}*/
 }
 
 @media screen and (max-width: 980px) {
-    /* Home */
+    /* Homepage */
     .me-image {
         display: flex;
         justify-content: center;
@@ -690,6 +744,33 @@
     }
 
 
+    /* Projects page */
+    #projects-h1 {
+        font-size: 37px;
+    }
+
+    .project h3 {
+        font-size: 22px;
+    }
+
+    section p {
+        font-size: 12px;
+    }
+
+    .weather-btn {
+        padding: 14px 20px;
+        font-size: 10px;
+    }
+
+    .temp-toggle {
+        font-size: 10px;
+    }
+
+    .project a {
+        font-size: 10px;
+    }
+
+
     /* Back to top */
     #back-to-top {
         width: 50px;
@@ -722,6 +803,14 @@
     #about {
         width: 93%;
         margin-left: 1%;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
     }
 }
 
@@ -908,6 +997,12 @@
     }
 
 
+    /* Projects page */
+    #projects-h1 {
+        font-size: 25px;
+    }
+
+
     /* Footer */
     footer {
         font-size: 10px;
@@ -930,6 +1025,24 @@
         width: 48%;
         padding: 8px;
         font-size: 18px;
+    }
+
+
+    /* Projects page */
+    .project h3 {
+        font-size: 20px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    section ul {
+        font-size: 15px;
+    }
+
+    .project a {
+        font-size: 16px;
     }
 }
 
