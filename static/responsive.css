@@ -399,6 +399,13 @@
     footer {
         font-size: 15px;
     }
+
+
+    /* Contact page */
+    #contact {
+        margin-top: 50px;
+        margin-bottom: -43px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -539,19 +546,6 @@
     .card-content {
         padding-top: 50px;
     }
-}
-
-@media screen and (max-width: 1085px) {
-    /* Homepage */
-    /* Home */
-    .home-container {
-        gap: 50px;
-    }
-
-    .home-section {
-        width: 48%;
-        font-size: 30px;
-    }
 
 
     /* Projects page */
@@ -563,12 +557,19 @@
         width: 90%;
     }
 
+    #projects ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .project a {
         font-size: 20px;
     }
 
     section p {
         font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     section ul {
@@ -597,6 +598,27 @@
 
     .project-img-container {
         width: 100%;
+    }
+
+
+    /* Back to top */
+    #back-to-top {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    /* Homepage */
+    /* Home */
+    .home-container {
+        gap: 50px;
+    }
+
+    .home-section {
+        width: 48%;
+        font-size: 30px;
     }
 }
 
@@ -680,12 +702,6 @@
 
     .experience-info .experience-location {
         text-align: center;
-    }
-
-    #back-to-top {
-        width: 60px;
-        height: 60px;
-        font-size: 28px;
     }
 }
 
@@ -785,13 +801,6 @@
         width: 34%;
     }
 }
-
-/*@media screen and (max-width: 925px) {*/
-/*     !*About page *!*/
-/*    #about p {*/
-/*        font-size: 18px;*/
-/*    }*/
-/*}*/
 
 @media screen and (max-width: 900px) {
     /* About page */
@@ -1302,7 +1311,6 @@
     }
 }
 
-
 @media screen and (max-width: 414px) and (max-height: 896px) {
     /* Contact page */
     #contact {
@@ -1312,6 +1320,13 @@
     .profile-image {
         width: 124px;
         height: 124px;
+    }
+}
+
+@media screen and (max-height: 820px) {
+    /* Contact page */
+    #contact {
+        min-height: 100vh;
     }
 }
 
