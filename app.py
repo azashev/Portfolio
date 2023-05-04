@@ -1,6 +1,7 @@
 import requests
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 api_key = "380cb1e746572c1d0e0ae8d32d134489"
@@ -31,6 +32,11 @@ def projects():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
+
+
+@app.route("/download-cv")
+def download_cv():
+    return send_from_directory(os.path.join(os.path.abspath(''), "static"), "cv-alexander-z.pdf", as_attachment=True)
 
 
 def get_weather_data(city):

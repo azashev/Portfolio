@@ -1022,8 +1022,8 @@
     /* Homepage */
     /* Home */
     .me-image img {
-        width: 220px;
-        height: 230px;
+        width: 225px;
+        height: 225px;
     }
 
     .typed-words {
@@ -1072,6 +1072,11 @@
 
     .typed-words {
         left: 26%;
+    }
+
+    .me-image img {
+        width: 235px;
+        height: 215px;
     }
 }
 
