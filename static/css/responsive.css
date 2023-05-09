@@ -74,7 +74,7 @@
 @media screen and (max-width: 1536px) {
     /* About page */
     #about-body {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(./images/about.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(../images/about.jpg);
     }
 
     #about p {
@@ -85,7 +85,7 @@
 @media screen and (max-width: 1440px) {
     /* About page */
     #about-body {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(./images/about.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(../images/about.jpg);
     }
 
     #about-container {
