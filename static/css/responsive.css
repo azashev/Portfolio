@@ -1038,6 +1038,16 @@
 
 
     /* Projects page */
+    .weather-app-form {
+        padding: 0;
+    }
+
+    .weather-btn {
+        position: relative;
+        right: 0;
+        padding: 11px 20px;
+    }
+
     .project h3 {
         font-size: 20px;
     }
