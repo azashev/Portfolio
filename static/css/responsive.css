@@ -1128,6 +1128,17 @@
     }
 
 
+    /* Projects page */
+    #projects-h1 {
+        font-size: 20px;
+    }
+
+    .project a {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    
     /* About page */
     #about-container {
         margin-left: 0;
