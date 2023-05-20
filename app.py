@@ -2,9 +2,11 @@ import requests
 from flask import Flask, render_template, request, jsonify, send_from_directory
 from datetime import datetime
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 app = Flask(__name__)
-api_key = "380cb1e746572c1d0e0ae8d32d134489"
+api_key = os.getenv("OPENWEATHER_API_KEY")
 
 
 @app.route("/")
