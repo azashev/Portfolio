@@ -456,6 +456,29 @@ section p, section ul {
 }
 
 
+
+/* Books Project styles */
+
+.books-app-img {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.books-app-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.books-app-img {
+    margin: 30px auto;
+}
+
+.book-app-description {
+    margin: 0 auto;
+}
+
 /* Connect Four styles */
 
 .connect-four {
