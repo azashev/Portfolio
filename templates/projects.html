@@ -9,26 +9,25 @@
     <link rel="stylesheet" href="../static/css/responsive.css">
 </head>
 <body id="projects-body">
-<header>
-    <nav>
+    <header>
+        <nav>
             <span class="hamburger-menu">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </span>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects" id="projects-btn-on-page" class="active">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main id="main-projects">
-    <section id="projects">
-        <h1 id="projects-h1">A Look into My Projects<span class="dot dot-1"></span><span class="dot dot-2"></span><span
-                class="dot dot-3"></span></h1>
-        <div class="project">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects" id="projects-btn-on-page" class="active">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-projects">
+        <section id="projects">
+            <h1 id="projects-h1">A Look into My Projects<span class="dot dot-1"></span><span class="dot dot-2"></span><span class="dot dot-3"></span></h1>
+            <div class="project">
             <div class="books-app project-content">
                 <h3>Books App (Django)</h3>
                 <p class="book-app-description">An interactive book catalogue platform designed for bibliophiles and
@@ -48,8 +47,8 @@
                 </div>
             </div>
         </div>
-        <div class="project">
-            <div class="weather-app weather-info-details">
+            <div class="project">
+                <div class="weather-app weather-info-details">
                 <h3>Weather App</h3>
                 <p>A simple and intuitive weather app that provides current weather conditions for any city worldwide.
                     Get up-to-date weather data, including temperature, humidity, and wind speed, at your fingertips.
@@ -61,86 +60,133 @@
                     <li>Provides additional information such as humidity, wind speed, and weather description</li>
                     <li>Minimalistic design for a clean and user-friendly experience</li>
                 </ul>
-            </div>
-            <div class="weather-container">
-                <div class="weather-app-form">
-                    <form id="form" method="get" action="/get-weather">
-                        <input type="text" name="city" placeholder="Enter city" required>
-                        <button class="projects-btns weather-btn" type="submit">Get Weather</button>
-                    </form>
-                    <div class="weather-info"></div>
-                    <button class="temp-toggle" style="display: none;">Toggle °C/°F</button>
+                </div>
+                <div class="weather-container">
+                    <div class="weather-app-form">
+                        <form id="form" method="get" action="/get-weather">
+                            <input type="text" name="city" placeholder="Enter city" required>
+                            <button class="projects-btns weather-btn" type="submit">Get Weather</button>
+                        </form>
+                        <div class="weather-info"></div>
+                        <button class="temp-toggle" style="display: none;">Toggle 째C/째F</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="project">
-            <div class="connect-four project-content">
-                <h3>Console Connect Four</h3>
-                <p>A simple two player connect four game.</p>
-                <p class="custom-margin">The main logic:</p>
-                <ul class="project-connect-four-bullets">
-                    <li>A player wins when they connect four slots</li>
-                    <li>The winning connected slots must be consecutive</li>
-                </ul>
-                <p class="custom-margin">A connection can be:</p>
-                <ul class="project-connect-four-bullets">
-                    <li>Horizontal</li>
-                    <li>Vertical</li>
-                    <li>Diagonal</li>
-                </ul>
+
+            <div class="project">
+                <div class="pong-game project-content">
+                    <h3>Pong Game</h3>
+                    <div class="pong-game-content">
+                        <p>A modern rendition of the classic Pong game built using Python's Turtle graphics. Play against a
+                            friend or challenge the computer!</p>
+                        <ul>
+                            <li><b>Two modes:</b> Play against the computer or challenge your friend in a two-player duel!
+                            </li>
+                            <li><b>Customizable Difficulty: </b>Adjust the game's difficulty level to fit your preference.
+                            </li>
+                            <li><b>Dynamic Ball Speed: </b>The ball's speed dynamically increases during gameplay, with up
+                                to 15
+                                escalating speed levels to challenge players.
+                            </li>
+                            <li><b>Winner: </b>The first player to reach 10 points wins the game!</li>
+                            <li><b>Graphics: </b>Enjoy the classic game with updated graphics and smooth gameplay.</li>
+                            <li><b>Reset Functionality: </b>Easily reset the game at any point to start afresh. To switch
+                                between modes, simply restart the game.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pong-game-img project-img-container">
+                        <img src="../static/images/pong-game-1.jpg" alt="pong-game">
+                        <img src="../static/images/pong-game-2.jpg" alt="pong-game">
+                    </div>
+                    <div class="pong-game-usage">
+                        <p><b>Usage:</b></p>
+                        <ul>
+                            <li>Use the arrow keys (Up and Down) to move the right paddle.</li>
+                            <li>Use the W and S keys to move the left paddle.</li>
+                            <li>Score by getting the ball past your opponent's paddle!</li>
+                            <li>As you play, watch out for the increasing ball speed, offering a progressively challenging
+                                experience.
+                            </li>
+                            <li>Click the Reset button to reset the game at any time.</li>
+                        </ul>
+                    </div>
+                    <div class="buttons-container">
+                        <a href="https://github.com/azashev/Mini-projects/releases/download/release-1.0/main.zip"
+                           target="_blank"
+                           class="projects-btns">Download on Windows</a>
+                        <a href="https://github.com/azashev/Mini-projects/releases/download/release-1.0/pong-game-linux.zip"
+                           target="_blank"
+                           class="projects-btns">Download on Linux</a>
+                        <a href="https://github.com/azashev/Mini-projects#pong-game"
+                           target="_blank"
+                           class="projects-btns">View on GitHub</a>
+                    </div>
+                </div>
             </div>
-            <div class="connect-four-img project-img-container">
-                <img src="../static/images/connect-four.png" alt="connect-four">
+            <div class="project">
+                <div class="connect-four project-content">
+                    <h3>Console Connect Four</h3>
+                    <p>A simple two player connect four game.</p>
+                    <p class="custom-margin">The main logic:</p>
+                    <ul class="project-connect-four-bullets">
+                        <li>A player wins when they connect four slots</li>
+                        <li>The winning connected slots must be consecutive</li>
+                    </ul>
+                    <p class="custom-margin">A connection can be:</p>
+                    <ul class="project-connect-four-bullets">
+                        <li>Horizontal</li>
+                        <li>Vertical</li>
+                        <li>Diagonal</li>
+                    </ul>
+                </div>
+                <div class="connect-four-img project-img-container">
+                    <img src="../static/images/connect-four.png" alt="connect-four">
+                </div>
+                <div class="buttons-container">
+                    <a href="https://replit.com/@azashev/Console-Connect-Four?v=1" target="_blank" class="projects-btns">View Live</a>
+                    <a href="https://github.com/azashev/Mini-projects/tree/main/Console%20Connect%20Four" target="_blank" class="projects-btns">View on GitHub</a>
+                </div>
             </div>
-            <div class="buttons-container">
-                <a href="https://replit.com/@azashev/Console-Connect-Four?v=1" target="_blank" class="projects-btns">View
-                    Live</a>
-                <a href="https://github.com/azashev/Mini-projects/tree/main/Console%20Connect%20Four" target="_blank"
-                   class="projects-btns">View on GitHub</a>
+            <div class="project">
+                <div class="hangman project-content">
+                    <h3>Custom Hangman Game</h3>
+                    <p>This is a custom Hangman game: guess 3 words with the option to use hints,
+                        and keep as many points as you can!</p>
+                    <p class="hangman-rules">The rules:</p>
+                    <ul>
+                        <li>You start with 90 points.</li>
+                        <li>Guess letters one by one or guess the whole word (a-Z, case insensitive).</li>
+                        <li>Reveal a random letter by typing hint! instead of a letter to help you guess a word.
+                            Every hint reduces your points by 10.</li>
+                        <li>You get 1 hint for short words (words with 5 or fewer symbols) and 3 for longer ones.</li>
+                        <li>The first and the last letters of the word will be revealed.</li>
+                        <li>The hints and the hangman stages reset with each word.</li>
+                        <li>Each new stage (8 total) comes after a failed guess.</li>
+                        <li>You lose if you fail to guess a word.</li>
+                        <li>Guess 3 words and keep as many points as you can!</li>
+                    </ul>
+                </div>
+                <div class="hangman-img project-img-container">
+                    <img src="../static/images/hangman.png" alt="hangman">
+                </div>
+                <div class="buttons-container">
+                    <a href="https://replit.com/@azashev/Custom-Hangman-Game?v=1" target="_blank" class="projects-btns">View Live</a>
+                    <a href="https://github.com/azashev/Mini-projects/tree/main/Hangman" target="_blank" class="projects-btns">View on GitHub</a>
+                </div>
             </div>
-        </div>
-        <div class="project">
-            <div class="hangman project-content">
-                <h3>Custom Hangman Game</h3>
-                <p>This is a custom Hangman game: guess 3 words with the option to use hints,
-                    and keep as many points as you can!</p>
-                <p class="hangman-rules">The rules:</p>
-                <ul>
-                    <li>You start with 90 points.</li>
-                    <li>Guess letters one by one or guess the whole word (a-Z, case insensitive).</li>
-                    <li>Reveal a random letter by typing hint! instead of a letter to help you guess a word.
-                        Every hint reduces your points by 10.
-                    </li>
-                    <li>You get 1 hint for short words (words with 5 or fewer symbols) and 3 for longer ones.</li>
-                    <li>The first and the last letters of the word will be revealed.</li>
-                    <li>The hints and the hangman stages reset with each word.</li>
-                    <li>Each new stage (8 total) comes after a failed guess.</li>
-                    <li>You lose if you fail to guess a word.</li>
-                    <li>Guess 3 words and keep as many points as you can!</li>
-                </ul>
-            </div>
-            <div class="hangman-img project-img-container">
-                <img src="../static/images/hangman.png" alt="hangman">
-            </div>
-            <div class="buttons-container">
-                <a href="https://replit.com/@azashev/Custom-Hangman-Game?v=1" target="_blank" class="projects-btns">View
-                    Live</a>
-                <a href="https://github.com/azashev/Mini-projects/tree/main/Hangman" target="_blank"
-                   class="projects-btns">View on GitHub</a>
-            </div>
-        </div>
-    </section>
-</main>
-<button id="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-<footer>
-    <p>&copy; Alexander Zashev, 2023. All rights reserved.</p>
-</footer>
-<script src="../static/js/hamburger.js"></script>
-<script src="../static/js/backtotop.js" defer></script>
-<script src="../static/js/script.js"></script>
-<script src="../static/js/SmoothScroll.js"></script>
-<script>
-    SmoothScroll({stepSize: 40});
-</script>
+        </section>
+    </main>
+    <button id="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <footer>
+        <p>&copy; Alexander Zashev, 2023. All rights reserved.</p>
+    </footer>
+    <script src="../static/js/hamburger.js"></script>
+    <script src="../static/js/backtotop.js" defer></script>
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/SmoothScroll.js"></script>
+    <script>
+        SmoothScroll({stepSize: 40});
+    </script>
 </body>
 </html>

@@ -125,6 +125,10 @@
         font-size: 17px;
     }
 
+    .pong-game-usage ul {
+        font-size: 21px;
+    }
+
 
     /* Back to top */
     #back-to-top {
@@ -182,6 +186,13 @@
 
     .date {
         text-align: center;
+    }
+
+
+    /* Pong Game */
+    .pong-game-img {
+        flex-direction: column;
+        margin: 30px auto;
     }
 }
 
@@ -598,6 +609,10 @@
 
     .project-img-container {
         width: 100%;
+    }
+
+    .project-img-container img {
+        width: 80%;
     }
 
 

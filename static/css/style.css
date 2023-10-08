@@ -479,6 +479,41 @@ section p, section ul {
     margin: 0 auto;
 }
 
+
+/* Pong Game styles */
+
+.pong-game-content > * {
+    margin: 20px auto;
+}
+
+.pong-game-content ul {
+    text-align: center;
+}
+
+.pong-game-content ul li {
+    margin-bottom: 16px;
+}
+
+.pong-game-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.pong-game-img img {
+    width: 49%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.pong-game-usage > * {
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+
 /* Connect Four styles */
 
 .connect-four {
@@ -514,6 +549,7 @@ section p, section ul {
     text-align: center;
     list-style-type: none;
 }
+
 
 
 /* Hangman styles */
